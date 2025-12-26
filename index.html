@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RaveBae - Your one-stop platform for rave event logistics coordination and booking">
+    <title>RaveBae - Rave Event Logistics & Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #ff006e;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 0, 110, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 0, 110, 0.6);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .status-banner {
+            background: rgba(255, 165, 0, 0.2);
+            border: 2px solid #ffa500;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .status-banner strong {
+            color: #ffa500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.3);
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RaveBae</h1>
+        <p class="tagline">One-stop platform for your rave logistics</p>
+    </header>
+
+    <div class="container">
+        <div class="status-banner">
+            <strong>Under Development</strong> - This platform is currently being built. Stay tuned for the official launch!
+        </div>
+
+        <div class="hero">
+            <p>
+                Stop juggling multiple tabs and overpaying for your rave experience. RaveBae brings together festival tickets,
+                flights, hotels, and shuttles in one place—so you can book faster, cheaper, and with your whole rave fam.
+            </p>
+            <a href="#" class="cta-button">Start Planning</a>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Group Coordination</h3>
+                <p>Plan with your rave fam in one place. Share itineraries, coordinate bookings, and keep everyone on the same page.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎟️</div>
+                <h3>Festival Tickets</h3>
+                <p>Find and compare festival passes, VIP upgrades, and tier options.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✈️</div>
+                <h3>Flight Booking</h3>
+                <p>Search and book flights that fit your schedule and budget. Compare prices and find the most convenient travel times.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏨</div>
+                <h3>Hotel & Accommodation</h3>
+                <p>Secure nearby lodging at competitive rates. From budget-friendly hotels to shared stays, we've got options for every vibe.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🚐</div>
+                <h3>Shuttle Services</h3>
+                <p>Book official shuttle tickets and ground transportation. Get to and from the venue safely and conveniently.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Price Transparency</h3>
+                <p>See all costs upfront with no hidden fees. Compare options side-by-side and book at prices you're comfortable with.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 RaveBae. All rights reserved.</p>
+        <p>Building the future of rave event management.</p>
+    </footer>
+</body>
+</html>
